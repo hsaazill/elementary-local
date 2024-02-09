@@ -18,7 +18,7 @@ function SignUp() {
 
         try {
 
-            const response = await axios.post("https://backend-tjgb.onrender.com/signup", {
+            const response = await axios.post("http://localhost:5000/signup", {
                 name, email, password
             })
                 .then(res => {
